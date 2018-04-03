@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* line 3, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+body {
+  margin: 0 0;
+  padding: 0 0;
+  background-color: gray;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 9, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+.container {
+  margin: 0 10%; }
+
+/* line 17, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+.logo {
+  height: 3.5rem;
+  margin-right: auto; }
+
+/* line 22, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-size: cover; }
+  /* line 27, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+  header > .naam {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+/* line 36, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+.navigatie {
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  justify-self: flex-end; }
+  /* line 41, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+  .navigatie > nav {
+    font-weight: bold;
+    width: 50%;
+    display: block; }
+    /* line 45, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+    .navigatie > nav > ul {
+      justify-content: space-around;
+      display: flex; }
+      /* line 48, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+      .navigatie > nav > ul > li {
+        width: 50%;
+        list-style: none; }
+        /* line 51, D:/PhpstormProjects/portefolio-frontend/sass/main.scss */
+        .navigatie > nav > ul > li > a {
+          text-decoration: none;
+          color: white; }
+
+/*# sourceMappingURL=../css/main.map */
