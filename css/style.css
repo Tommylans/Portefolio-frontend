@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Karla");
+/* line 1, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center, center; }
+  /* line 10, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+  header .logo {
+    margin-top: 1rem;
+    height: 50%;
+    margin-right: auto; }
+  /* line 16, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+  header .navigatie {
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    justify-self: flex-end; }
+    /* line 21, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+    header .navigatie > nav {
+      font-weight: bold;
+      width: 50%;
+      display: block; }
+      /* line 26, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+      header .navigatie > nav > ul {
+        justify-content: space-around;
+        display: flex; }
+        @media screen and (max-width: 600px) {
+          /* line 30, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+          header .navigatie > nav > ul {
+            display: none; } }
+        /* line 34, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+        header .navigatie > nav > ul > li {
+          width: 50%;
+          list-style: none; }
+          /* line 37, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+          header .navigatie > nav > ul > li > a {
+            text-decoration: none;
+            color: white; }
+  /* line 47, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+  header .gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+    height: 100%;
+    width: 100%; }
+    /* line 51, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+    header .gradient .naam {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white; }
+      /* line 58, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+      header .gradient .naam > h1 {
+        font-size: 6rem; }
+      /* line 61, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+      header .gradient .naam > p {
+        font-size: 3rem;
+        margin-top: 0;
+        color: gray; }
+      /* line 66, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+      header .gradient .naam > a {
+        background-image: linear-gradient(90deg, #1673ff 0%, #435be1 52%, #6c45c6 100%);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 3rem;
+        padding: 0 3rem; }
+        /* line 73, D:/PhpstormProjects/portefolio-frontend/scss/_header.scss */
+        header .gradient .naam > a:hover {
+          background: #006dd2 linear-gradient(90deg, #1673ff 0%, #435be1 52%, #6c45c6 100%);
+          filter: brightness(0.9); }
+
+/* line 1, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+main {
+  width: 100%; }
+  /* line 3, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  main .informatie {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    background-color: #f6f6f6; }
+    @media screen and (max-width: 600px) {
+      /* line 10, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+      main .informatie {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center; } }
+    /* line 16, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+    main .informatie .card {
+      font-family: 'Karla', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20rem; }
+      /* line 22, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+      main .informatie .card h2 {
+        margin: 0; }
+      /* line 25, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+      main .informatie .card p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
+        color: #5f5f5f; }
+      /* line 31, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+      main .informatie .card a {
+        text-decoration: none;
+        color: #444; }
+
+/* line 39, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+.works {
+  padding: 5rem 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%; }
+  @media screen and (max-width: 600px) {
+    /* line 41, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+    .works {
+      padding: 5rem 10%;
+      width: 80%; } }
+  /* line 51, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  .works h2 {
+    margin: 0; }
+  /* line 54, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  .works p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #5f5f5f; }
+
+/* line 62, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+.pictures {
+  margin-top: 3rem;
+  margin-bottom: 5rem; }
+  /* line 65, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  .pictures .container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 71, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+    .pictures .container .picture {
+      width: 50%;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin: auto auto 1rem; }
+      /* line 78, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+      .pictures .container .picture img {
+        width: 100%; }
+
+/* line 85, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+.caption {
+  display: flex;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  bottom: 0; }
+  /* line 95, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  .caption .text {
+    color: #fff;
+    margin: auto 2rem 2rem; }
+    /* line 99, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+    .caption .text h2 {
+      font-weight: 800;
+      font-size: 0.9rem; }
+
+@media screen and (max-width: 990px) {
+  /* line 108, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+  .pictures .container {
+    width: 100%;
+    display: block;
+    padding-right: -15px;
+    padding-left: -15px;
+    margin-right: auto;
+    margin-left: auto; }
+    /* line 115, D:/PhpstormProjects/portefolio-frontend/scss/_main.scss */
+    .pictures .container .picture {
+      margin: 0 auto;
+      width: 100%; } }
+
+/* line 2, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+footer .row {
+  background-color: rgba(38, 38, 38, 0.88); }
+
+/* line 5, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+footer .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 3rem 0; }
+  /* line 11, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+  footer .container > p {
+    color: white; }
+  /* line 14, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+  footer .container .card {
+    display: flex;
+    flex-direction: column; }
+    /* line 17, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+    footer .container .card h3 {
+      color: #f2f2f2; }
+    /* line 20, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+    footer .container .card p {
+      max-width: 40rem;
+      color: #bdbdbd; }
+    /* line 24, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+    footer .container .card a {
+      text-decoration: none;
+      color: #bdbdbd; }
+    /* line 28, D:/PhpstormProjects/portefolio-frontend/scss/_footer.scss */
+    footer .container .card li {
+      list-style: none; }
+
+/* line 8, D:/PhpstormProjects/portefolio-frontend/scss/style.scss */
+body {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: 'Montserrat', sans-serif; }
+
+/* line 14, D:/PhpstormProjects/portefolio-frontend/scss/style.scss */
+.row {
+  width: 100%;
+  height: auto; }
+
+/* line 19, D:/PhpstormProjects/portefolio-frontend/scss/style.scss */
+.container {
+  margin: 0 10%; }
+
+/*# sourceMappingURL=../css/style.map */

@@ -1,0 +1,33 @@
+footer {
+  .row {
+    background-color: rgba(38, 38, 38, 0.88);
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 3rem 0;
+    > p {
+      color: white;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: #f2f2f2;
+      }
+      p {
+        max-width: 40rem;
+        color: #bdbdbd;
+      }
+      a {
+        text-decoration: none;
+        color: #bdbdbd;
+      }
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

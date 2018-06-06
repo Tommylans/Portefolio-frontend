@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+$mobile-width: 600px;
+@import "header";
+@import "main";
+@import "footer";
+
+body {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 10%;
+}
